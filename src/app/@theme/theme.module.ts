@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { MaterialModule } from './components';
+
 import {
   FooterComponent,
   HeaderComponent
@@ -16,9 +18,10 @@ const COMPONENTS = [
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    MaterialModule
   ],
-  exports: [...COMPONENTS],
+  exports: [...COMPONENTS, MaterialModule],
   declarations: [...COMPONENTS]
 })
 export class ThemeModule { }
