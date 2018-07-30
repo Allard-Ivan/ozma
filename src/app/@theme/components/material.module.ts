@@ -13,6 +13,10 @@ import {
   MatToolbarModule
 } from '@angular/material/toolbar';
 
+import {
+  MatSelectModule
+} from '@angular/material/select';
+
 const MODULES = [
   MatButtonModule,
   MatIconModule,
@@ -20,7 +24,8 @@ const MODULES = [
   MatInputModule,
   MatFormFieldModule,
   MatAutocompleteModule,
-  MatToolbarModule
+  MatToolbarModule,
+  MatSelectModule
 ];
 
 @NgModule({
