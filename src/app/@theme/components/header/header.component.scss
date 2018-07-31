@@ -1,3 +1,5 @@
+$primary-color: #3f51b5;
+
 .mat-elevation {
     box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2),
         0 6px 10px 0 rgba(0, 0, 0, .14),
@@ -6,6 +8,51 @@
 
 .part-navbar, .navbar-show-small {
     display: none;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    color: #fff;
+    background: $primary-color;
+}
+
+.navbar-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 8px 16px;
+
+    > .mat-button {
+        &:last-child {
+            margin-left: auto;
+        }
+    }
+    // height: 40px;
+}
+
+.navbar-link {
+    text-decoration: inherit;
+    flex: 1;
+}
+
+.ozma-logo {
+    height: 26px;
+    margin: 0 4px 3px 0;
+    vertical-align: middle;
+}
+
+.github-logo {
+    height: 21px;
+    margin: 0 7px 2px 0;
+    vertical-align: middle;
+}
+
+.flex-spacer {
+    flex-grow: 1;
 }
 
 @media(max-width: 720px) {
@@ -20,35 +67,4 @@
     .navbar-hide-small {
         display: none;
     }
-}
-
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 2;
-    color: #fff;
-    background: #3f51b5;
-}
-
-.navbar-header {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 8px 16px;
-}
-
-.navbar-link {
-    text-decoration: inherit;
-    flex: 1;
-}
-
-.ozma-logo {
-    height: 26px;
-    margin: 0 4px 3px 0;
-}
-
-.flex-spacer {
-    flex-grow: 1;
 }

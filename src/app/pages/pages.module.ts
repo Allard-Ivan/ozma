@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { PagesRoutingModule } from './pages-routing.module';
 import { ThemeModule } from './../@theme/theme.module';
+import { SvgViewerModule } from './../shared/svg-viewer/svg-viewer';
 
 import { PagesComponent } from './pages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -16,7 +17,8 @@ const PAGE_COMPONENT = [
   imports: [
     CommonModule,
     PagesRoutingModule,
-    ThemeModule
+    ThemeModule,
+    SvgViewerModule
   ],
   declarations: [...PAGE_COMPONENT]
 })
