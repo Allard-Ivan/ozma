@@ -7,3 +7,9 @@ app-default-layout {
     left: 0;
     right: 0;
 }
+
+@media (max-width: 720px) {
+    app-default-layout {
+        top: 92px;
+    }
+}

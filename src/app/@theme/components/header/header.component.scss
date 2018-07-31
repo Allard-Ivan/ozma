@@ -4,6 +4,24 @@
         0 1px 18px 0 rgba(0, 0, 0, .12);
 }
 
+.part-navbar, .navbar-show-small {
+    display: none;
+}
+
+@media(max-width: 720px) {
+    .part-navbar {
+        display: flex;
+    }
+
+    .navbar-show-small {
+        display: block;
+    }
+
+    .navbar-hide-small {
+        display: none;
+    }
+}
+
 .navbar {
     position: fixed;
     top: 0;
@@ -11,10 +29,7 @@
     right: 0;
     z-index: 2;
     color: #fff;
-
-    .navbar-header {
-        background: #3f51b5;
-    }
+    background: #3f51b5;
 }
 
 .navbar-header {
@@ -24,61 +39,16 @@
     padding: 8px 16px;
 }
 
-.mat-button, .mat-flat-button, .mat-icon-button, .mat-stroked-button {
-    box-sizing: border-box;
-    position: relative;
-    user-select: none;
-    cursor: pointer;
-    outline: 0;
-    border: none;
-    -webkit-tap-highlight-color: transparent;
-    display: inline-block;
-    white-space: nowrap;
-    text-decoration: none;
-    vertical-align: baseline;
-    text-align: center;
-    margin:0;
-    min-width: 88px;
-    line-height: 36px;
-    padding: 0 16px;
-    border-radius: 2px;
-    overflow: visible;
+.navbar-link {
+    text-decoration: inherit;
+    flex: 1;
 }
 
-.toolbar {
-    // color: #fff;
+.ozma-logo {
+    height: 26px;
+    margin: 0 4px 3px 0;
+}
 
-    // padding: 6px;
-
-    // .toolbar-icon {
-    //     padding: 0 14px;
-    // }
-
-    // .fill-remaining {
-    //     flex: 1 1 auto;
-    // }
-
-    // button {
-    //     margin: 0 4px;
-    // }
-
-    // .mat-button, .mat-fab, .mat-flat-button, .mat-icon-button, .mat-mini-fab, .mat-raised-button, .mat-stroked-button
-    // {
-    //     font-family: Roboto,"Helvetica Neue",sans-serif;
-    //     font-size: 14px;
-    //     font-weight: 550;
-    // }
-
-    // .logo-left {
-    //     margin-left: 2%;
-    // }
-
-    // .logo-font {
-    //     font-size: 16px;
-    // }
-
-    // .logo {
-    //     height: 26px;
-    //     margin: 0 4px 3px 0;
-    // }
+.flex-spacer {
+    flex-grow: 1;
 }

@@ -1,26 +1,83 @@
 <div class="navbar mat-elevation">
 
-  <mat-toolbar color="primary" class="navbar-header">
-    <a aria-label="Ozma" class="ozma-button mat-button" mat-button routerlink="/" tabindex="0" aria-disabled="false">
+  <nav class="navbar-header">
+    <a aria-label="Ozma" class="mat-button" mat-button routerlink="/" tabindex="0" aria-disabled="false">
       <span class="mat-button-wrapper">
-        <img alt="ozma" class="ozma-logo" src="../../../../favicon.ico">
+        <img alt="ozma" class="ozma-logo" src="//material.angular.io/assets/img/homepage/angular-white-transparent.svg">
         <span>Ozma</span>
       </span>
       <div class="mat-button-ripple mat-ripple" matripple></div>
       <div class="mat-button-focus-overlay"></div>
     </a>
 
-    <!-- <button mat-icon-button>
-      <mat-icon class="logo">home</mat-icon>
-    </button>
-    <span>Ozma</span>
-    <span class="logo-left"></span>
-    <button mat-button>笔记站</button>
-    <button mat-button>房屋</button>
-    <button mat-button>饮食</button>
+    <a class="mat-button navbar-hide-small" mat-button routerlink="/" tabindex="0" aria-disabled="false">
+      <span class="mat-button-wrapper">
+        <span>Notes</span>
+      </span>
+      <div class="mat-button-ripple mat-ripple" matripple></div>
+      <div class="mat-button-focus-overlay"></div>
+    </a>
 
-    <span class="fill-remaining"></span> -->
+    <a class="mat-button navbar-hide-small" mat-button routerlink="/" tabindex="0" aria-disabled="false">
+      <span class="mat-button-wrapper">
+        <span>House</span>
+      </span>
+      <div class="mat-button-ripple mat-ripple" matripple></div>
+      <div class="mat-button-focus-overlay"></div>
+    </a>
 
-  </mat-toolbar>
+    <a class="mat-button navbar-hide-small" mat-button routerlink="/" tabindex="0" aria-disabled="false">
+      <span class="mat-button-wrapper">
+        <span>Food</span>
+      </span>
+      <div class="mat-button-ripple mat-ripple" matripple></div>
+      <div class="mat-button-focus-overlay"></div>
+    </a>
+
+    <div class="flex-spacer"></div>
+
+    <a aria-label="Github Repository" class="mat-button navbar-hide-small" mat-button href="https://github.com/Allard-Ivan/ozma" tabindex="0" aria-disabled="false">
+      <span class="mat-button-wrapper">
+        <img alt="Allard Ivan" class="ozma-logo" src="//material.angular.io/assets/img/homepage/github-circle-white-transparent.svg">
+        Github
+      </span>
+      <div class="mat-button-ripple mat-ripple" matripple></div>
+      <div class="mat-button-focus-overlay"></div>
+    </a>
+
+    <a aria-label="Github Repository" class="mat-icon-button navbar-show-small" mat-icon-button href="https://github.com/Allard-Ivan/ozma" tabindex="0" aria-disabled="false">
+      <span class="mat-button-wrapper">
+        <img alt="Allard Ivan" class="ozma-logo" src="//material.angular.io/assets/img/homepage/github-circle-white-transparent.svg">
+      </span>
+      <div class="mat-button-ripple mat-ripple mat-button-ripple-round" matripple></div>
+      <div class="mat-button-focus-overlay"></div>
+    </a>
+  </nav>
+
+  <nav class="part-navbar navbar-show-small">
+    <a class="mat-button navbar-link" mat-button routerlink="/" tabindex="0" aria-disabled="false">
+      <span class="mat-button-wrapper">
+        Notes
+      </span>
+      <div class="mat-button-ripple mat-ripple" matripple></div>
+      <div class="mat-button-focus-overlay"></div>
+    </a>
+
+    <a class="mat-button navbar-link" mat-button routerlink="/" tabindex="0" aria-disabled="false">
+      <span class="mat-button-wrapper">
+        House
+      </span>
+      <div class="mat-button-ripple mat-ripple" matripple></div>
+      <div class="mat-button-focus-overlay"></div>
+    </a>
+
+    <a class="mat-button navbar-link" mat-button routerlink="/" tabindex="0" aria-disabled="false">
+      <span class="mat-button-wrapper">
+        Food
+      </span>
+      <div class="mat-button-ripple mat-ripple" matripple></div>
+      <div class="mat-button-focus-overlay"></div>
+    </a>
+  </nav>
 
 </div>
