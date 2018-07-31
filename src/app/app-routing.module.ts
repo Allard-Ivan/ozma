@@ -3,10 +3,11 @@ import { NgModule } from '@angular/core';
 
 const routes: Routes = [
     {
-        path: 'pages', loadChildren: './pages/pages.module#PagesModule'
+        path: '',
+        loadChildren: './pages/homepage/homepage#HomepageModule',
+        pathMatch: 'full'
     },
-    { path: '', redirectTo: 'pages', pathMatch: 'full' },
-    { path: '**', redirectTo: 'pages' }
+    { path: '**', redirectTo: '' }
 ];
 
 const config: ExtraOptions = {

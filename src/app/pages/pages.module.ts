@@ -2,15 +2,14 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { PagesRoutingModule } from './pages-routing.module';
-import { ThemeModule } from './../@theme/theme.module';
-import { SvgViewerModule } from './../shared/svg-viewer/svg-viewer';
+import { ThemeModule } from '../@theme/theme.module';
 
 import { PagesComponent } from './pages.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { Homepage } from './homepage/homepage';
 
 const PAGE_COMPONENT = [
   PagesComponent,
-  DashboardComponent
+  Homepage
 ];
 
 @NgModule({
@@ -18,7 +17,6 @@ const PAGE_COMPONENT = [
     CommonModule,
     PagesRoutingModule,
     ThemeModule,
-    SvgViewerModule
   ],
   declarations: [...PAGE_COMPONENT]
 })
