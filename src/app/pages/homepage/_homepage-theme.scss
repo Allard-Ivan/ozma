@@ -4,22 +4,22 @@
     $warn: map-get($theme, warn);
     $background: map-get($theme, background);
     $foreground: map-get($theme, foreground);
-}
 
-app-dashboard {
-    .header-background {
-        background: mat-color($primary);
-    }
-
-    .header-headerline {
-        color: mat-color($primary, default-contrast);
-    }
-
-    .header-start {
-        color: mat-color($primary);
-    }
-
-    .homepage-row {
-        color: mat-color($foreground, secondary-text);
+    app-dashboard {
+        .portal-header-background {
+            background: mat-color($primary);
+        }
+    
+        .portal-header-headerline {
+            color: mat-color($primary, default-contrast);
+        }
+    
+        .portal-header-start {
+            color: mat-color($primary);
+        }
+    
+        .portal-homepage-row {
+            color: mat-color($foreground, secondary-text);
+        }
     }
 }

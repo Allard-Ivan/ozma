@@ -1,22 +1,17 @@
-$primary-color: #3f51b5;
+// The margin between two sections
+$margin-promotion-sections: 60px;
+$margin-promotion-sections-small: 15px;
 
-.homepage {
-    overflow-y: auto;
-}
-
-.header-background {
+.portal-header-background {
     overflow: hidden;
-    background: $primary-color;
 }
 
-.header-section {
+.portal-header-section {
     text-align: center;
     padding-top: 60px;
 }
 
-.header-headerline {
-    color: #fff;
-
+.portal-header-headerline {
     h1 {
         font-size: 56px;
         font-weight: 300;
@@ -27,43 +22,77 @@ $primary-color: #3f51b5;
         font-size: 18px;
         font-weight: 300;
         line-height: 28px;
-        margin: 15px 0 25px;
+        margin: 15px 0 25px 0;
     }
 }
 
-.header-headerstart {
-    text-align: center;
-    margin: 60px 0;
-    color: $primary-color;
-}
-
-.homepage-promo {
+.portal-homepage-promo {
     align-items: center;
     display: flex;
     flex-direction: column;
     padding: 16px;
+
+    h2 {
+        font-size: 25px;
+        font-weight: 400;
+        margin: 0 0 16px 0;
+        padding: 0;
+    }
+    
+    p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        margin: 0 0 24px 0;
+        padding: 0;
+    }
 }
 
-.homepage-row {
+.portal-homepage-row {
     display: flex;
     max-width: 920px;
-    margin: 60px 0;
-    color: rgba(0, 0, 0, .54);
+    margin: $margin-promotion-sections 0;
 }
 
-.homepage-promo-img {
+.portal-homepage-row .portal-svg-image{
+    max-width: 90%;
+}
+
+.docs-homepage-reverse-row {
+    flex-direction: row-reverse;
+}
+
+.portal-header-start, .portal-homepage-bottom-start {
     text-align: center;
+    margin: $margin-promotion-sections 0;
 }
 
-.homepage-promo-img, .homepage-promo-desc {
+.portal-homepage-promo-img, .portal-homepage-promo-desc {
     width: 50%;
 }
 
+.portal-homepage-promo-img {
+    text-align: center;
+}
+
+.portal-homepage-promo-desc {
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 @media (max-width: 720px) {
-    .homepage {
-        overflow-y: visible;
+    .portal-header-section {
+        padding-top: $margin-promotion-sections-small;
     }
-    .header-section {
-        padding-top: 15px;
+
+    .portal-header-start,
+    .portal-homepage-bottom-start {
+      margin: $margin-promotion-sections-small 0;
+    }
+  
+    .portal-homepage-row {
+      margin: $margin-promotion-sections-small 0;
     }
 }

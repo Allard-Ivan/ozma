@@ -1,6 +1,7 @@
 @import '../node_modules/@angular/material/theming';
 
 @import './app/shared/navbar/navbar-theme';
+@import './app/pages/homepage/homepage-theme';
 
 @mixin ozma-portal-app-theme($theme) {
     $primary: map-get($theme, primary);
@@ -27,4 +28,5 @@
     }
 
     @include nav-bar-theme($theme);
+    @include home-page-theme($theme);
 }
