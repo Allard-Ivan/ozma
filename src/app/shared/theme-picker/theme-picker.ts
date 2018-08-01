@@ -22,26 +22,26 @@ export class ThemePicker {
     {
       primary: '#673AB7',
       accent: '#FFC107',
-      href: 'deeppurple-amber.scss',
+      href: 'deeppurple-amber.css',
       isDark: false,
     },
     {
       primary: '#3F51B5',
       accent: '#E91E63',
-      href: 'indigo-pink.scss',
+      href: 'indigo-pink.css',
       isDark: false,
       isDefault: true,
     },
     {
       primary: '#E91E63',
       accent: '#607D8B',
-      href: 'pink-bluegrey.scss',
+      href: 'pink-bluegrey.css',
       isDark: true,
     },
     {
       primary: '#9C27B0',
       accent: '#4CAF50',
-      href: 'purple-green.scss',
+      href: 'purple-green.css',
       isDark: true,
     },
   ];
@@ -62,7 +62,7 @@ export class ThemePicker {
     if (theme.isDefault) {
       this.styleManager.removeStyle('theme');
     } else {
-      this.styleManager.setStyle('theme', `assets/portal-theme/${theme.href}`);
+      this.styleManager.setStyle('theme', `assets/portal-theme/compile/${theme.href}`);
     }
 
     if (this.currentTheme) {
