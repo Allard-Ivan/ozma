@@ -44,6 +44,12 @@ export class ThemePicker {
       href: 'purple-green.css',
       isDark: true,
     },
+    {
+      primary: '#FF5722',
+      accent: '#4CAF50',
+      href: 'deeporange-green.css',
+      isDark: false,
+    },
   ];
 
   constructor(

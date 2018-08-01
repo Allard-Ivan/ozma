@@ -1,0 +1,8 @@
+@import '../../app-theme';
+
+$primary: mat-palette($mat-deep-orange);
+$accent: mat-palette($mat-green, A200, A100, A400);
+
+$theme: mat-light-theme($primary, $accent);
+@include angular-material-theme($theme);
+@include ozma-portal-app-theme($theme);

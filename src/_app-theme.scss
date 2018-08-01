@@ -27,6 +27,6 @@
         color: mat-color($primary, default-contrast);
     }
 
-    @include nav-bar-theme($theme);
     @include home-page-theme($theme);
+    @include nav-bar-theme($theme);
 }
