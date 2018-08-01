@@ -7,11 +7,8 @@ import {
   FooterComponent,
 } from './components';
 
-import { DefaultLayoutComponent } from './layouts';
-
 const COMPONENTS = [
   FooterComponent,
-  DefaultLayoutComponent
 ];
 
 @NgModule({

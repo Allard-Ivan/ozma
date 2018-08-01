@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'ozma-portal-app',
   templateUrl: './ozma-portal-app.html',
-  styleUrls: ['./ozma-portal-app.scss']
+  styleUrls: ['./ozma-portal-app.scss'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent {
   title = 'ozma';

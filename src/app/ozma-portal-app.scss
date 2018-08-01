@@ -1,0 +1,22 @@
+ozma-portal-app {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 56px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+@media (max-width: 720px) {
+    ozma-portal-app {
+      top: 92px;
+    }
+
+    ozma-portal-app > app-homepage,
+    ozma-portal-app > app-guides,
+    ozma-portal-app > guide-viewer {
+      overflow-y: visible;
+    }
+}

@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { MatButtonModule, MatMenuModule } from '@angular/material';
 import { RouterModule } from '@angular/router';
 
+import { ThemePickerModule } from './../theme-picker/theme-picker';
+
 
 @Component({
   selector: 'app-navbar',
@@ -21,6 +23,7 @@ export class Navbar {
     MatButtonModule,
     MatMenuModule,
     RouterModule,
+    ThemePickerModule
   ],
   exports: [Navbar],
   declarations: [Navbar]
