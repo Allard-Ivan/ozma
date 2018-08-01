@@ -2,6 +2,7 @@ import { Component, OnInit, NgModule } from '@angular/core';
 import { SvgViewerModule } from '../../shared/svg-viewer/svg-viewer';
 import { MatButtonModule } from '@angular/material';
 import { RouterModule } from '@angular/router';
+import { FooterModule } from '../../shared/footer/footer';
 
 @Component({
   selector: 'app-homepage',
@@ -18,7 +19,7 @@ export class Homepage implements OnInit {
 }
 
 @NgModule({
-  imports: [SvgViewerModule, MatButtonModule, RouterModule.forChild([{path: '', component: Homepage}])],
+  imports: [SvgViewerModule, MatButtonModule, FooterModule, RouterModule.forChild([{path: '', component: Homepage}])],
   declarations: [Homepage]
 })
 export class HomepageModule {}

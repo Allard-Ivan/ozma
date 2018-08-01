@@ -1,0 +1,58 @@
+.portal-footer {
+    padding: 12px;
+    font-size: 12px;
+    margin-top: 40px;
+}
+
+.portal-footer-list {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 8px;
+}
+
+.portal-footer-logo {
+    flex: 1;
+}
+
+.portal-footer-ozma-logo {
+    height: 50px;
+}
+
+.portal-footer-version {
+    flex: 1;
+    text-align: center;
+}
+
+.portal-footer-copyright {
+    display: flex;
+    flex: 1;
+    justify-content: felx-end;
+    flex-direction: column;
+    min-width: 225px;
+    text-align: center;
+}
+
+.portal-footer-logo span {
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 40px;
+    vertical-align: bottom;
+
+    a {
+        font-size: 16px;
+        padding: 0;
+        text-decoration: none;
+        color: inherit;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+@media screen and (max-width: 884px) {
+    .portal-footer-list {
+        flex-direction: column;
+    }
+}

@@ -8,7 +8,7 @@ $margin-promotion-sections-small: 15px;
 
 .portal-header-section {
     text-align: center;
-    padding-top: 60px;
+    padding-top: $margin-promotion-sections;
 }
 
 .portal-header-headerline {
@@ -58,7 +58,7 @@ $margin-promotion-sections-small: 15px;
     max-width: 90%;
 }
 
-.docs-homepage-reverse-row {
+.portal-homepage-reverse-row {
     flex-direction: row-reverse;
 }
 

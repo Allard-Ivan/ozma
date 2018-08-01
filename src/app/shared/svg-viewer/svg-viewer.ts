@@ -3,11 +3,9 @@ import {Component, ElementRef, Input, NgModule, OnInit} from '@angular/core';
 
 
 @Component({
-  // tslint:disable-next-line:component-selector
   selector: 'svg-viewer',
-  template: '<div class="docs-svg-viewer" aria-hidden="true"></div>',
+  template: '<div class="portal-svg-viewer" aria-hidden="true"></div>',
 })
-// tslint:disable-next-line:component-class-suffix
 export class SvgViewer implements OnInit {
   @Input() src: string;
   @Input() scaleToContainer: boolean;

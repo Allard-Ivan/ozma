@@ -2,6 +2,7 @@
 
 @import './app/shared/navbar/navbar-theme';
 @import './app/pages/homepage/homepage-theme';
+@import './styles/svg-theme';
 
 @mixin ozma-portal-app-theme($theme) {
     $primary: map-get($theme, primary);
@@ -27,6 +28,7 @@
         color: mat-color($primary, default-contrast);
     }
 
+    @include portal-site-svg-theme($theme);
     @include home-page-theme($theme);
     @include nav-bar-theme($theme);
 }
