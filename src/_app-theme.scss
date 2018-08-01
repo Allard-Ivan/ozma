@@ -1,0 +1,30 @@
+@import '~@angular/material/theming';
+
+@import './app/shared/navbar/navbar-theme';
+
+@mixin ozma-portal-app-theme($theme) {
+    $primary: map-get($theme, primary);
+    $accent: map-get($theme, accent);
+    $warn: map-get($theme, warn);
+    $background: map-get($theme, background);
+    $foreground: map-get($theme, foreground);
+
+    .portal-app-background {
+        background: mat-color($background, background);
+    }
+
+    .portal-primary-header {
+        background: mat-color($primary);
+
+        h1 {
+            color: mat-color($primary, default-contrast);
+        }
+    }
+
+    .portal-footer {
+        background: mat-color($primary);
+        color: mat-color($primary, default-contrast);
+    }
+
+    @include nav-bar-theme($theme);
+}

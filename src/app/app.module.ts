@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppRouterModule } from './app-routing.module';
+import { NavbarModule } from './shared/navbar';
 
 import { AppComponent } from './ozma-portal-app';
 
@@ -12,8 +13,9 @@ import { AppComponent } from './ozma-portal-app';
   ],
   imports: [
     BrowserModule,
-    AppRouterModule,
     HttpClientModule,
+    AppRouterModule,
+    NavbarModule
   ],
   providers: [
   ],

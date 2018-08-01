@@ -5,14 +5,12 @@ import { MaterialModule } from './components';
 
 import {
   FooterComponent,
-  HeaderComponent
 } from './components';
 
 import { DefaultLayoutComponent } from './layouts';
 
 const COMPONENTS = [
   FooterComponent,
-  HeaderComponent,
   DefaultLayoutComponent
 ];
 

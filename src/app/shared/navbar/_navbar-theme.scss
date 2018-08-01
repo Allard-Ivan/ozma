@@ -1,0 +1,23 @@
+@mixin nav-bar-theme($theme) {
+    $primary: map-get($theme, primary);
+    $accent: map-get($theme, accent);
+    $warn: map-get($theme, warn);
+    $background: map-get($theme, background);
+    $foreground: map-get($theme, foreground);
+
+    app-navbar {
+        color: mat-color($primary, default-contrast);
+
+        .portal-navbar, .portal-navbar-header {
+            background: mat-color($primary);
+        }
+    }
+}
+
+app-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
