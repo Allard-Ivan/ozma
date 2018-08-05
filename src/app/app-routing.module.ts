@@ -7,6 +7,14 @@ const routes: Routes = [
         loadChildren: './pages/homepage/homepage#HomepageModule',
         pathMatch: 'full'
     },
+    {
+        path: 'note',
+        loadChildren: './pages/note/note#NoteModule'
+    },
+    {
+        path: 'faq',
+        loadChildren: './pages/faq/faq#FaqModule'
+    },
     { path: '**', redirectTo: '' }
 ];
 

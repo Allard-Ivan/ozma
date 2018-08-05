@@ -1,18 +1,23 @@
 <nav class="portal-navbar-header">
-  <a mat-button routerlink="/" aria-label="Ozma Portal">
+  <a mat-button routerLink="/" aria-label="Ozma Portal">
       <img class="portal-ozma-logo"
            src="//material.angular.io/assets/img/homepage/angular-white-transparent.svg"
            alt="ozma">
       <span>Ozma</span>
   </a>
 
-  <a class="portal-navbar-hide-small" mat-button routerlink="Notes">
-      <span>Notes</span>
+  <mat-menu class="mat-menu-panel" #nodesMenu="matMenu">
+    <button mat-menu-item routerLink="/note">Note</button>
+    <button mat-menu-item routerLink="faq">FAQ</button>
+  </mat-menu>
+
+  <a class="portal-navbar-hide-small" mat-button [matMenuTriggerFor]="nodesMenu">
+      <span>NoteStation</span>
   </a>
-  <a class="portal-navbar-hide-small" mat-button routerlink="House">
+  <a class="portal-navbar-hide-small" mat-button routerLink="/house">
       <span>House</span>
   </a>
-  <a class="portal-navbar-hide-small" mat-button routerlink="Food">
+  <a class="portal-navbar-hide-small" mat-button routerLink="food">
       <span>Food</span>
   </a>
 
@@ -29,16 +34,16 @@
   </a>
 </nav>
 
-<nav class="portal-navbar portal-navbar-show-small">
-  <a class="portal-navbar-link" mat-button routerlink="Notes">
-      Notes
+<nav class="portal-navbar portal-navbar-show-small" [matMenuTriggerFor]="nodesMenu">
+  <a class="portal-navbar-link" mat-button [matMenuTriggerFor]="nodesMenu">
+    NoteStation
   </a>
 
-  <a class="portal-navbar-link" mat-button routerlink="House">
+  <a class="portal-navbar-link" mat-button routerLink="house">
       House
   </a>
 
-  <a class="portal-navbar-link" mat-button routerlink="Food">
+  <a class="portal-navbar-link" mat-button routerLink="food">
       Food
   </a>
 </nav>
