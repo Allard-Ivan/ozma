@@ -1,5 +1,6 @@
 import { Component, OnInit, NgModule } from '@angular/core';
 import { MatButtonModule } from '@angular/material';
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { RouterModule } from '@angular/router';
 
 @Component({
@@ -17,7 +18,7 @@ export class Note implements OnInit {
 }
 
 @NgModule({
-  imports: [MatButtonModule, RouterModule.forChild([{path: '', component: Note}])],
+  imports: [MatButtonModule, MatSidenavModule, RouterModule.forChild([{path: '', component: Note}])],
   declarations: [Note]
 })
 export class NoteModule {}
