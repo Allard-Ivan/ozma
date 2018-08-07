@@ -1,4 +1,8 @@
-.test-drawer {
-    width: 400px;
-    height: 500px;
+.drawer {
+    overflow-y: hidden;
+    flex: 2;
+}
+
+.itemli {
+    margin-bottom: 48px;
 }
