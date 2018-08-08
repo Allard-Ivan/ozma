@@ -151,6 +151,10 @@ $side-module-size: 42px;
     overflow: hidden;
     transition: width 0.1s linear, border 0s linear 0.1s;
     border-right: 1px solid #e4e4e4;
+
+    >mat-card {
+        padding: 0;
+    }
 }
 
 .secondary-side-header {
@@ -210,4 +214,38 @@ $side-module-size: 42px;
 .secondary-side-header-tag {
     @extend %secondary-side-header-icon;
     margin-left: 5px;
+}
+
+.multiple-notes {
+    overflow-y: auto;
+    margin-top: 4px;
+    cursor: pointer;
+
+    mat-card {
+        border-radius: 0;
+        height: 72px;
+    }
+
+    mat-card-title {
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 500;
+        margin-bottom: 2px;
+    }
+
+    .note-summary {
+        color: rgb(122, 128, 131);
+        font-size: 13px;
+        font-weight: 300;
+        height: 40;
+        line-height: 19.5px;
+        margin-bottom: 5px;
+    }
+
+    .note-update {
+        color: rgb(153, 153, 153);
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 18px;
+    }
 }
