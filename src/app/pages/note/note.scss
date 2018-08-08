@@ -1,6 +1,17 @@
 $side-nav-width: 73px;
 $side-module-size: 42px;
 
+%special-font {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+%secondary-side-header-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
 .side-nav {
     height: 100%;
     position: absolute;
@@ -170,11 +181,33 @@ $side-module-size: 42px;
     padding-right: 12px;
     font-size: 20px;
     letter-spacing: 0.03em;
-    font-weight: 400;
-    text-rendering: optimizeLegibility;
     margin: .67em 0;
+    cursor: default;
+    
+    @extend %special-font;
 }
 
 .secondary-side-header-bottom {
     padding-bottom: 10px;
+}
+
+.secondary-side-header-note-count {
+    -webkit-box-flex: 1;
+    flex: 1;
+    font-size: 13px;
+    color: #999;
+    min-width: 50px;
+    font-weight: 300;
+    cursor: default;
+
+    @extend %special-font;
+}
+
+.secondary-side-header-sort {
+    @extend %secondary-side-header-icon;
+}
+
+.secondary-side-header-tag {
+    @extend %secondary-side-header-icon;
+    margin-left: 5px;
 }
