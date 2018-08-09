@@ -36,7 +36,7 @@ export class SvgViewer implements OnInit {
 }
 
 function getAbsolutePathFromSrc(src: string) {
-  return src.slice(src.indexOf('assets/') - 1);
+  return src.slice(src.indexOf('assets/'));
 }
 
 @NgModule({

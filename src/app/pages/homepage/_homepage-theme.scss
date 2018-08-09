@@ -6,6 +6,8 @@
     $foreground: map-get($theme, foreground);
 
     app-homepage {
+        overflow: auto;
+
         .portal-header-background {
             background: mat-color($primary);
         }

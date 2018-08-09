@@ -2,7 +2,8 @@ import { Component, OnInit, NgModule } from '@angular/core';
 import { MatButtonModule } from '@angular/material';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCardModule } from '@angular/material/card';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+import { NoteDetail } from '../note-detail/note-detail';
 
 @Component({
   selector: 'app-note',
@@ -18,9 +19,20 @@ export class Note implements OnInit {
 
 }
 
+const routes: Routes = [
+  {
+    path: '',
+    component: Note,
+    children: [ 
+      { path: '', component: NoteDetail}
+    ]
+  },
+  { path: '**', redirectTo: '' }
+];
+
 @NgModule({
   imports: [MatButtonModule, MatSidenavModule, MatCardModule,
-    RouterModule.forChild([{path: '', component: Note}])],
-  declarations: [Note]
+    RouterModule.forChild(routes)],
+  declarations: [Note, NoteDetail]
 })
 export class NoteModule {}

@@ -3,6 +3,7 @@
 @import './app/shared/navbar/navbar-theme';
 @import './app/pages/homepage/homepage-theme';
 @import './styles/svg-theme';
+@import './app/pages/note/note-theme';
 
 @mixin ozma-portal-app-theme($theme) {
     $primary: map-get($theme, primary);
@@ -31,4 +32,5 @@
     @include portal-site-svg-theme($theme);
     @include home-page-theme($theme);
     @include nav-bar-theme($theme);
+    @include note-theme($theme);
 }

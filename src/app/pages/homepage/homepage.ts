@@ -1,8 +1,8 @@
 import { Component, OnInit, NgModule } from '@angular/core';
-import { SvgViewerModule } from '../../shared/svg-viewer/svg-viewer';
+import { SvgViewerModule } from '@shared/svg-viewer/svg-viewer';
 import { MatButtonModule } from '@angular/material';
 import { RouterModule } from '@angular/router';
-import { FooterModule } from '../../shared/footer/footer';
+import { FooterModule } from '@shared/footer/footer';
 
 @Component({
   selector: 'app-homepage',
