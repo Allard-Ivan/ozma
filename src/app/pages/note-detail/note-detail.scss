@@ -133,3 +133,93 @@
         background-color: #f0f1f1;
     }
 }
+
+.note-content {
+    -webkit-box-flex: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    background-color: white;
+}
+
+.note-content-default-header {
+    display: flex;
+    height: 54px;
+    -webkit-box-align: center;
+    align-items: center;
+    border-bottom: 1px solid #ededed;
+    margin: 0 20px;
+
+    .header-left {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        min-width: 220px;
+        white-space: nowrap;
+    }
+
+    .header-left-btn {
+        display: inline-block;
+        flex-shrink: 0;
+        cursor: pointer;
+        outline: none;
+        padding: 0;
+        line-height: normal;
+    }
+
+    .header-left-svg {
+        display: inline-block;
+        background-position: center;
+        background-size: 20px 20px;
+        vertical-align: middle;
+    
+        &:hover, &:focus {
+            opacity: 0.7;
+        }
+    }
+
+    .header-left-svg-split {
+        flex-shrink: 0;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 2px;
+        margin-right: 5px;
+    }
+
+    .header-note-book {
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+    }
+
+    .header-note-book-svg {
+        margin-right: 5px;
+        display: inline-block;
+        background-position: center;
+        background-size: 14px 14px;
+        vertical-align: middle;
+    }
+
+    .header-note-book-text {
+        max-width: 195px;
+        cursor: pointer;
+        font-size: 12px;
+        color: #7a8083;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        vertical-align: center;
+        white-space: nowrap;
+
+        &:hover, &:focus {
+            text-decoration: underline;
+        }
+    }
+}
+
+svg {
+    line-height: normal;
+}
