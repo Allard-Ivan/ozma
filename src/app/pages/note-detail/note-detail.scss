@@ -152,7 +152,7 @@
     -webkit-box-align: center;
     align-items: center;
     border-bottom: 1px solid #ededed;
-    margin: 0 20px;
+    margin: 0 90px 0 20px;
 
     .header-left {
         display: flex;
@@ -216,6 +216,66 @@
 
         &:hover, &:focus {
             text-decoration: underline;
+        }
+    }
+
+    .header-right {
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+    }
+
+    .share {
+        border: 1px solid #2dbe60;
+        color: #2dbe60;
+
+        &:hover, &:focus {
+            border-color: #28af58;
+            background: #28af58;
+            color: #ffffff;
+        }
+    }
+
+    .custom-btn {
+        cursor: pointer;
+        display: inline-flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        vertical-align: middle;
+        border-radius: 4px;
+        font-weight: 400;
+        text-align: center;
+        line-height: 1;
+        letter-spacing: 0px;
+        transition: all 0.1s ease-out;
+        user-select: none;
+        font-size: 13px;
+        padding: 5px 8px;
+        margin: 0 12px 0 0;
+    }
+
+    .upgrade {
+        border: 1px solid #ffad17;
+        color: #ffffff;
+        background-color: #ffad17;
+
+        &:hover, &:focus {
+            border-color: #f0a00d;
+            background-color: #f0a00d;
+        }
+    }
+
+    .more {
+        cursor: pointer;
+        float: right;
+        height: 16px;
+        width: 16px;
+        margin: 2px 0;
+        
+        &:hover, &:focus {
+            color: #58AFB2;
         }
     }
 }

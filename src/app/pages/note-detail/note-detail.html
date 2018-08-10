@@ -160,7 +160,7 @@
     <div class="note-content">
       <div class="note-content-default-header">
         <div class="header-left">
-          <button class="header-left-btn">
+          <button class="header-left-btn" (click)="drawer.toggle()">
             <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" class="header-left-svg">
               <g fill="none" fill-rule="evenodd">
                 <path d="M0 0h20v20H0z"></path>
@@ -184,14 +184,30 @@
               <use fill="#858F97" fill-rule="nonzero" xlink:href="#27a"></use>
             </svg>
             <div class="header-note-book-text" :before>
-                Experience
+              Experience
             </div>
           </div>
         </div>
         <div class="header-right">
-
+          <div class="share custom-btn">
+            共享
+          </div>
+          <div class="upgrade custom-btn">
+            升级
+          </div>
+          <div>
+            <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" class="more">
+              <path d="M25 19a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm-9 0a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm-9 0a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                fill="#7297BA" fill-rule="evenodd"></path>
+            </svg>
+          </div>
         </div>
       </div>
+
+      <div class="markdown">
+        markdown
+      </div>
+
     </div>
     <!-- <mat-icon (click)="drawer.toggle()">check_circle</mat-icon> -->
   </mat-drawer-content>
