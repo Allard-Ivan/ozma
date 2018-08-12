@@ -280,6 +280,14 @@
     }
 }
 
+.markdown {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 73px 0 0;
+    height: 100%;
+    overflow: hidden;
+}
+
 svg {
     line-height: normal;
 }

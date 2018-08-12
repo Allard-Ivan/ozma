@@ -3,6 +3,9 @@ import { MatButtonModule } from '@angular/material';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCardModule } from '@angular/material/card';
 import { RouterModule, Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { CKEditorModule } from 'ng2-ckeditor';
+
 import { NoteDetail } from '../note-detail/note-detail';
 
 @Component({
@@ -31,7 +34,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [MatButtonModule, MatSidenavModule, MatCardModule,
+  imports: [MatButtonModule, MatSidenavModule, MatCardModule, CKEditorModule, FormsModule,
     RouterModule.forChild(routes)],
   declarations: [Note, NoteDetail]
 })

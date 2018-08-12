@@ -156,8 +156,7 @@
       </mat-card>
     </div>
   </mat-drawer>
-  <mat-drawer-content>
-    <div class="note-content">
+  <mat-drawer-content class="note-content">
       <div class="note-content-default-header">
         <div class="header-left">
           <button class="header-left-btn" (click)="drawer.toggle()">
@@ -205,10 +204,13 @@
       </div>
 
       <div class="markdown">
-        markdown
+        <div style="flex: 1;">
+            <ckeditor [(ngModel)]="ckeditorContent" debounce="500" [config]="config">
+              </ckeditor>
+        </div>
+        输入的内容：<br> {{ ckeditorContent }}
       </div>
 
-    </div>
     <!-- <mat-icon (click)="drawer.toggle()">check_circle</mat-icon> -->
   </mat-drawer-content>
 </mat-drawer-container>

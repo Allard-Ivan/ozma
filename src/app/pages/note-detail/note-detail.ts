@@ -6,9 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./note-detail.scss']
 })
 export class NoteDetail implements OnInit {
-
+  ckeditorContent = "";
   constructor() { }
-
+  config={
+    filebrowserBrowseUrl :"&&&&&",
+    filebrowserUploadUrl :"&&&",
+    height: 747
+  };
   ngOnInit() {
   }
 
