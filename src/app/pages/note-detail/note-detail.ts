@@ -7,13 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NoteDetail implements OnInit {
   ckeditorContent = "";
-  constructor() { }
-  config={
+
+  config: any ={
     filebrowserBrowseUrl :"&&&&&",
     filebrowserUploadUrl :"&&&",
-    height: 747
   };
+
+  constructor() { }
+
   ngOnInit() {
+    this.config.height = window.screen.height - 300;
   }
 
 }
