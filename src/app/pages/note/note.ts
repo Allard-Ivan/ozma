@@ -4,6 +4,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCardModule } from '@angular/material/card';
 import { RouterModule, Routes, Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 import { CKEditorModule } from 'ng2-ckeditor';
 
 import { NoteDetail } from '../note-detail/note-detail';
@@ -15,32 +16,26 @@ import { NoteDetail } from '../note-detail/note-detail';
 })
 export class Note implements OnInit {
 
-  bb: boolean;
+  imgSwitchFlag: boolean = true;
 
   constructor(private router: Router) { }
 
   ngOnInit() {
+    // 防止在笔记本标签页刷新时，图片显隐失误
+    if (this.router.url.indexOf('note-book') !== -1) {
+      this.imgSwitchFlag = false;
+    }
   }
 
-  foo() {
+  gotoNoteBook() {
+    this.imgSwitchFlag = false;
     this.router.navigateByUrl('/note/note-book');
-    this.bb = false;
-    // document.getElementById('note-book-fimg').style['opacity'] = '0';
-    // document.getElementById('note-book-bimg').style['opacity'] = '1';
-    // document.getElementById('note-fimg').style['opacity'] = '1';
-    // document.getElementById('note-bimg').style['opacity'] = '0';
-    
   }
 
-  bar() {
+  gotoNote() {
+    this.imgSwitchFlag = true;
     this.router.navigateByUrl('/note');
-    this.bb = true;
-    // document.getElementById('note-fimg').style['opacity'] = '0';
-    // document.getElementById('note-bimg').style['opacity'] = '1';
-    // document.getElementById('note-book-fimg').style['opacity'] = '1';
-    // document.getElementById('note-book-bimg').style['opacity'] = '0';
   }
-
 }
 
 const routes: Routes = [
@@ -59,7 +54,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [MatButtonModule, MatSidenavModule, MatCardModule, CKEditorModule, FormsModule,
+  imports: [CommonModule, MatButtonModule, MatSidenavModule, MatCardModule, CKEditorModule, FormsModule,
     RouterModule.forChild(routes)],
   declarations: [Note, NoteDetail]
 })

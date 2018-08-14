@@ -23,6 +23,9 @@ CKEDITOR.editorConfig = function( config ) {
 		{ name: 'others', groups: [ 'others' ] },
 		{ name: 'about', groups: [ 'about' ] }
 	];
+	// 以后再研究这两个
+	config.cloudServices_tokenUrl = 'https://docs.ckeditor.com/ckeditor4/latest/api/CKEDITOR_config.html#cfg-cloudServices_tokenUrl';
+	config.cloudServices_uploadUrl = 'https://your-organization-id.cke-cs.com/easyimage/upload/';
 
 	config.removeButtons = 'Source,NewPage,Templates,Cut,Copy,Paste,PasteFromWord,PasteText,Undo,Redo,SelectAll,Form,HiddenField,ImageButton,Button,Select,Textarea,TextField,Radio,Checkbox,Outdent,Indent,CreateDiv,BidiLtr,BidiRtl,Language,ShowBlocks,About';
 	config.removePlugins = 'elementspath,resize';
